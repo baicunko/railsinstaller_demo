@@ -5,7 +5,7 @@ var marker;
 
 function createMarker(event){
   //alert("Latitude: "+event.latLng.lat()+" "+", longitude: "+event.latLng.lng());
-  //addMarker(event.latLng);
+
   if(marker){marker.setPosition(event.latLng);}
   else{
     marker = new google.maps.Marker({
@@ -30,5 +30,5 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-intiialize();
+
 

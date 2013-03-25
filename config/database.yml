@@ -23,3 +23,12 @@ production:
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+
+external_db:
+  adapter: mysql2
+  encoding: utf8
+  host: 200.74.52.77
+  port: 3306
+  database: ruby
+  username: root
+  password: Thnbd5po!

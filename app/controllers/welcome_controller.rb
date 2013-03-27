@@ -1,5 +1,9 @@
 class WelcomeController < ApplicationController
   def index
-  	#@signal = Signal.first
+  	@signalData = SignalData.first
+  	@lat = @signalData.Latitud
+  	@lng = @signalData.Longitud
+  	@op = @signalData.Operador
+  	@int = @signalData.Intensidad
   end
 end

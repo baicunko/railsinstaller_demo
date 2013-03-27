@@ -27,8 +27,36 @@ production:
 external_db:
   adapter: mysql2
   encoding: utf8
-  host: 200.74.52.77
-  port: 3306
+  host: www.ganganadores.cl
+  port: 3306 
   database: ruby
-  username: root
-  password: Thnbd5po!
+  username: monty
+  password: monty
+  pool: 10
+
+
+
+#       require 'rubygems'
+#       require 'active_record'
+#       require 'mysql2'
+#       require 'net/ssh/gateway'
+#
+#       gateway = Net::SSH::Gateway.new(
+#         'remotehost.com',
+#         'username'
+#       )
+#       port = gateway.open('127.0.0.1', 3306, 3307)
+#
+#       class Company < ActiveRecord::Base
+#         establish_connection(
+#           :adapter  => "mysql2",
+#           :host     => "127.0.0.1",
+#           :username => "dbuser",
+#           :password => "dbpass",
+#           :database => "dbname",
+#           :port     => 3307
+#         )
+#       end
+#       puts Company.all.size
+#       http://127.0.0.1/
+#      127.0.0.1

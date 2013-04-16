@@ -17,9 +17,9 @@ function ajaxGetSignal(lat, lng){
     success: function(response) 
     {
       if(response[0] == null){alert("No Data Found!");}
-      alert(lat + ", "+ lng +"\r"+response[0].Latitud +","+ response[0].Longitud);      
+      else{alert(lat + ", "+ lng +"\r"+response.length +","+ response.length);}   
     },
-    error: function(){alert('An error has ocurred, please try again later.');}
+    error: function(response){alert('An error has ocurred, please try again later.');}
   });
 
 }

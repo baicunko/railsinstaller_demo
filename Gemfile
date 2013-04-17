@@ -24,7 +24,7 @@ gem 'jquery-rails'
 gem 'mysql'
 gem 'mysql2'
 
-gem 'geocoder'
+gem 'geokit-rails3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

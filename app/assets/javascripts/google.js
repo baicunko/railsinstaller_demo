@@ -17,7 +17,13 @@ function ajaxGetSignal(lat, lng){
     success: function(response) 
     {
       if(response[0] == null){alert("No Data Found!");}
-      else{alert(lat + ", "+ lng +"\r"+response.length +","+ response.length);}   
+      else
+      {
+        for (i = 0; i < response.length; i += 1)
+        {
+          $('#results').append('<li>' + response[i] + '</li>');
+        } 
+      }   
     },
     error: function(response){alert('An error has ocurred, please try again later.');}
   });

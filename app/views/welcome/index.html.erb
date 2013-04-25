@@ -7,13 +7,12 @@
       #map-canvas { height: 80% }
     </style>
 
-    <div id="lat" value="<%= @lat %>"></div>
-    <div id="lng" value="<%= @lng %>"></div>
-  <%= @operator %>
   </head>
   <body>
+    <div id="lat" value="<%= @lat %>">Latitude: *</div>
+    <div id="lng" value="<%= @lng %>">Longitude: *</div>
     <ul id="results">
-
+      <li>Click on the map!</li>
     </ul>
     <div id="map-canvas"/>
   </body>

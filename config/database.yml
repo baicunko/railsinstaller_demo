@@ -27,7 +27,7 @@ production:
 external_db:
   adapter: mysql2
   encoding: utf8
-  host: www.ganganadores.cl
+  host: 190.101.50.168
   port: 3306 
   database: ruby
   username: monty

@@ -16,17 +16,23 @@ function ajaxGetSignal(lat, lng){
     },               
     success: function(response) 
     {
-      if(response[0] == null){alert("No Data Found!");}
+      $('#results').empty();
+      $('#lat').text('Latitude: ' + lat);
+      $('#lng').text('Longitude: ' + lng);
+      if(response == null || response[0] == null)
+      {         
+        $('#results').append('<li>No data found</li>');
+      }
       else
-      {
+      { 
         for (i = 0; i < response.length; i += 1)
         {
-          $('#results').append('<li>' + response[i] + '</li>');
+          $('#results').append('<li>' + 'Operador: ' + response[i][0] +' Avg: '+ response[i][1] + '</li>');
         } 
       }   
     },
     error: function(response){alert('An error has ocurred, please try again later.');}
-  });
+  });9
 
 }
 
